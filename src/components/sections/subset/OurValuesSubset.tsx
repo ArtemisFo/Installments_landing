@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react";
 import { useTranslations } from "next-intl";
-import { Typography } from "@repo/ui";
+import Typography from "@components/ui/forms/Typography.tsx";
 import ValueCard from "@components/ui/cards/ValueCard.tsx";
 
 function OurValuesSubset() {

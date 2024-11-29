@@ -1,5 +1,5 @@
-import { ContextDisplay_Utils } from "@repo/utils";
-import { Typography } from "@repo/ui";
+import { ContextDisplay_Utils } from "@utils/functions.ts";
+import Typography  from "@components/ui/forms/Typography.tsx";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import BadgeCountSm from "@components/ui/smallCards/BadgeCountSm.tsx";
 

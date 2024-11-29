@@ -1,7 +1,7 @@
-import { Typography } from "@repo/ui";
+import Typography  from "@components/ui/forms/Typography.tsx";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import React from "react";
-import { ContextDisplay_Utils } from "@repo/utils";
+import { ContextDisplay_Utils } from "@utils/functions.ts";
 
 interface Props {
   data?: { img: string; txt: string };

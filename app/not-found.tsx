@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { NotFound } from "@repo/ui";
+import NotFound from "@components/ui/forms/NotFound.tsx";
 import Header from "@components/layout/Header.tsx";
 import Footer from "@components/layout/Footer.tsx";
 

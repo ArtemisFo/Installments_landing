@@ -1,6 +1,4 @@
 import "@styles/globals.css";
-import "@repo/ui/styles.css";
-import "@repo/icon/styles.css";
 import type { Metadata, Viewport } from "next";
 import { IranSans_font } from "./fonts.ts";
 import { NextIntlClientProvider } from "next-intl";

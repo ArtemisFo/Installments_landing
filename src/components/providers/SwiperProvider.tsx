@@ -1,10 +1,13 @@
 "use client";
 
+// @ts-ignore
 import { Swiper } from "swiper/react";
-import React, { useRef } from "react";
+// @ts-ignore
 import { Swiper as SwiperType } from "swiper/types";
-import { ArrowLeftIcon, ArrowRightIcon } from "@repo/icon";
-import { IconBtn } from "@repo/ui";
+import React, { useRef } from "react";
+import ArrowLeftIcon from "@components/ui/icons/ArrowLeftIcon.tsx";
+import ArrowRightIcon from "@components/ui/icons/ArrowRightIcon.tsx";
+import IconBtn from "@components/ui/forms/IconBtn.tsx";
 import { Children } from "@interfaces/general.ts";
 
 interface Props {

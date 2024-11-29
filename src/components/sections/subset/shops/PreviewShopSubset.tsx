@@ -1,7 +1,8 @@
 import React from "react";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
-import { Typography } from "@repo/ui";
-import { LocationIcon, CategoryIcon } from "@repo/icon";
+import Typography from "@components/ui/forms/Typography.tsx";
+import LocationIcon from "@components/ui/icons/LocationIcon.tsx";
+import CategoryIcon from "@components/ui/icons/CategoryIcon.tsx";
 import { useTranslations } from "next-intl";
 import {
   SINGLE_SHOP_NEXT_IMAGE,

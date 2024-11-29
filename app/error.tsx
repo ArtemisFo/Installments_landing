@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
-import { Button, ServerError, Typography } from "@repo/ui";
+import ServerError from "@components/ui/forms/ServerError.tsx";
+import Button from "@components/ui/forms/Button.tsx";
+import Typography from "@components/ui/forms/Typography.tsx";
 import { useTranslations } from "next-intl";
 import Header from "@components/layout/Header.tsx";
 import Footer from "@components/layout/Footer.tsx";

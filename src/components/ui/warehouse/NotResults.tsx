@@ -1,4 +1,4 @@
-import { Typography } from "@repo/ui";
+import Typography from "@components/ui/forms/Typography.tsx";
 import { useTranslations } from "next-intl";
 import { NO_RESULT_NEXT_IMAGE } from "@constants/env.ts";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";

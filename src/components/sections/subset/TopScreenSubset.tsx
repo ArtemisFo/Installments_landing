@@ -1,8 +1,9 @@
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import React from "react";
-import { Button, Typography } from "@repo/ui";
+import Button from "@components/ui/forms/Button.tsx";
+import Typography from "@components/ui/forms/Typography.tsx";
 import { useTranslations } from "next-intl";
-import { ArrowLeftIcon } from "@repo/icon";
+import ArrowLeftIcon from "@components/ui/icons/ArrowLeftIcon.tsx";
 import {
   DOTTED_LINE_NEXT_IMAGE,
   TOP_SCREEN_NEXT_IMAGE,
@@ -14,14 +15,14 @@ function TopScreenSubset() {
   return (
     <section>
       <div className="-z-1 absolute top-0 right-1/2 translate-x-1/2 bg-primary-5 h-[600px] w-full rounded-b-[100px] max-w-screen-3xl">
-        <div className="absolute top-1/2 ui-left-0 pe-4">
+        <div className="absolute top-1/2 left-0 pe-4">
           <NextImage
             width={28}
             src={DOTTED_LINE_NEXT_IMAGE}
             alt="left side img"
           />
         </div>
-        <div className="absolute top-1/2 ui-right-0 ps-4">
+        <div className="absolute top-1/2 right-0 ps-4">
           <NextImage
             width={28}
             src={DOTTED_LINE_NEXT_IMAGE}

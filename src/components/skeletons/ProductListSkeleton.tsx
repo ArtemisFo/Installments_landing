@@ -1,4 +1,4 @@
-import { Skeleton } from "@repo/ui";
+import Skeleton from "@components/ui/forms/Skeleton.tsx";
 
 interface Props {
   count?: number;

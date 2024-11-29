@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import Colors_Theme from "@styles/Theme.ts";
+import Colors_Theme from "./src/styles/Theme.ts";
 const tw_colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 

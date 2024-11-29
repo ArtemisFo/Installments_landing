@@ -8,12 +8,12 @@ import ProductsCategorySlideSubset from "@sections/subset/ProductsCategorySlideS
 import OurValuesSubset from "@sections/subset/OurValuesSubset.tsx";
 import PreviewAboutUsSubset from "@sections/subset/PreviewAboutUsSubset.tsx";
 import DominanceItems from "@sections/items/DominanceItems.tsx";
+import { useTranslations } from "next-intl";
 import {
   BUILDING_FANTASY_NEXT_IMAGE,
   CATEGORY_FANTASY_NEXT_IMAGE,
   STORE_FANTASY_NEXT_IMAGE,
 } from "@constants/env.ts";
-import { useTranslations } from "next-intl";
 
 function HomeContent() {
   const t = useTranslations("webSiteConstant");

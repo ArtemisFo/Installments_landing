@@ -3,7 +3,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import TitleCard from "@components/ui/cards/TitleCard.tsx";
-import { Typography } from "@repo/ui";
+import Typography from "@components/ui/forms/Typography.tsx";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import {
   HEXAGON_MISSION_NEXT_IMAGE,

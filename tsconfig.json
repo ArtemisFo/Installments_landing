@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "display": "Next.js",
     "allowJs": true,
     "jsx": "preserve",
     "composite": false,

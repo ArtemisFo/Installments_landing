@@ -6,7 +6,7 @@ import FiltersItems from "@sections/items/shops/FiltersItems.tsx";
 import ShopListSubset from "@sections/subset/shops/ShopListSubset.tsx";
 import TitleCard from "@components/ui/cards/TitleCard.tsx";
 import { Get_StoresListAPI } from "@http/api/stores.ts";
-import { StatusSuccess_Utils } from "@repo/utils";
+import { StatusSuccess_Utils } from "@utils/functions.ts";
 import Snackbar from "@utils/SnackbarUtils.ts";
 import {
   GetListResAPIType,

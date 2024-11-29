@@ -1,0 +1,273 @@
+@layer utilities {
+  /*  CONTAINED  */
+  .btn-contained-primary {
+    @apply bg-primary-main text-primary-onMain hover:bg-primary-30 active:ring-[3px] active:ring-primary-95;
+  }
+  .btn-contained-primary span.btn-startIcon > svg,
+  .btn-contained-primary span.btn-endIcon > svg {
+    @apply fill-primary-onMain;
+  }
+  .btn-contained-secondary {
+    @apply bg-secondary-main text-secondary-onMain hover:bg-secondary-30 active:ring-[3px] active:ring-secondary-95;
+  }
+  .btn-contained-secondary span.btn-startIcon > svg,
+  .btn-contained-secondary span.btn-endIcon > svg {
+    @apply fill-secondary-onMain;
+  }
+
+  .btn-contained-success {
+    @apply bg-success-main text-success-onMain hover:bg-success-30 active:ring-[3px] active:ring-success-95;
+  }
+  .btn-contained-success span.btn-startIcon > svg,
+  .btn-contained-success span.btn-endIcon > svg {
+    @apply fill-success-onMain;
+  }
+  .btn-contained-error {
+    @apply bg-error-main text-error-onMain hover:bg-error-30 active:ring-[3px] active:ring-error-95;
+  }
+  .btn-contained-error span.btn-startIcon > svg,
+  .btn-contained-error span.btn-endIcon > svg {
+    @apply fill-error-onMain;
+  }
+  .btn-contained-info {
+    @apply bg-info-main text-info-onMain hover:bg-info-30 active:ring-[3px] active:ring-info-95;
+  }
+  .btn-contained-info span.btn-startIcon > svg,
+  .btn-contained-info span.btn-endIcon > svg {
+    @apply fill-info-onMain;
+  }
+  .btn-contained-warning {
+    @apply bg-warning-main text-warning-onMain hover:bg-warning-30 active:ring-[3px] active:ring-warning-95;
+  }
+  .btn-contained-warning span.btn-startIcon > svg,
+  .btn-contained-warning span.btn-endIcon > svg {
+    @apply fill-warning-onMain;
+  }
+  .btn-contained-neutral {
+    @apply bg-neutral-main text-neutral-onMain hover:bg-neutral-30 active:ring-[3px] active:ring-neutral-95;
+  }
+  .btn-contained-neutral span.btn-startIcon > svg,
+  .btn-contained-neutral span.btn-endIcon > svg {
+    @apply fill-neutral-onMain;
+  }
+
+  /*  OUTLINED  */
+  .btn-outlined-primary {
+    @apply border border-primary-main text-primary-main hover:border hover:border-primary-30 hover:bg-primary-onMain hover:text-primary-30 active:border-none active:ring-[3px] active:ring-primary-95;
+  }
+  .btn-outlined-primary span.btn-startIcon > svg,
+  .btn-outlined-primary span.btn-endIcon > svg {
+    @apply fill-primary-main;
+  }
+  .btn-outlined-primary:hover span.btn-startIcon > svg,
+  .btn-outlined-primary:hover span.btn-endIcon > svg {
+    @apply fill-primary-30;
+  }
+  .btn-outlined-secondary {
+    @apply border border-secondary-main text-secondary-main hover:border hover:border-secondary-30 hover:bg-secondary-onMain hover:text-secondary-30 active:border-none active:ring-[3px] active:ring-secondary-95;
+  }
+  .btn-outlined-secondary span.btn-startIcon > svg,
+  .btn-outlined-secondary span.btn-endIcon > svg {
+    @apply fill-secondary-main;
+  }
+  .btn-outlined-secondary:hover span.btn-startIcon > svg,
+  .btn-outlined-secondary:hover span.btn-endIcon > svg {
+    @apply fill-secondary-30;
+  }
+
+  .btn-outlined-success {
+    @apply border border-success-main text-success-main hover:border hover:border-success-30 hover:bg-success-onMain hover:text-success-30 active:border-none active:ring-[3px] active:ring-success-95;
+  }
+  .btn-outlined-success span.btn-startIcon > svg,
+  .btn-outlined-success span.btn-endIcon > svg {
+    @apply fill-success-main;
+  }
+  .btn-outlined-success:hover span.btn-startIcon > svg,
+  .btn-outlined-success:hover span.btn-endIcon > svg {
+    @apply fill-success-30;
+  }
+  .btn-outlined-error {
+    @apply border border-error-main text-error-main hover:border hover:border-error-30 hover:bg-error-onMain hover:text-error-30 active:border-none active:ring-[3px] active:ring-error-95;
+  }
+  .btn-outlined-error span.btn-startIcon > svg,
+  .btn-outlined-error span.btn-endIcon > svg {
+    @apply fill-error-main;
+  }
+  .btn-outlined-error:hover span.btn-startIcon > svg,
+  .btn-outlined-error:hover span.btn-endIcon > svg {
+    @apply fill-error-30;
+  }
+  .btn-outlined-info {
+    @apply border border-info-main text-info-main hover:border hover:border-info-30 hover:bg-info-onMain hover:text-info-30 active:border-none active:ring-[3px] active:ring-info-95;
+  }
+  .btn-outlined-info span.btn-startIcon > svg,
+  .btn-outlined-info span.btn-endIcon > svg {
+    @apply fill-info-main;
+  }
+  .btn-outlined-info:hover span.btn-startIcon > svg,
+  .btn-outlined-info:hover span.btn-endIcon > svg {
+    @apply fill-info-30;
+  }
+  .btn-outlined-warning {
+    @apply border border-warning-main text-warning-main hover:border hover:border-warning-30 hover:bg-warning-onMain hover:text-warning-30 active:border-none active:ring-[3px] active:ring-warning-95;
+  }
+  .btn-outlined-warning span.btn-startIcon > svg,
+  .btn-outlined-warning span.btn-endIcon > svg {
+    @apply fill-warning-main;
+  }
+  .btn-outlined-warning:hover span.btn-startIcon > svg,
+  .btn-outlined-warning:hover span.btn-endIcon > svg {
+    @apply fill-warning-30;
+  }
+  .btn-outlined-neutral {
+    @apply border border-neutral-main text-neutral-main hover:border hover:border-neutral-30 hover:bg-neutral-onMain hover:text-neutral-30 active:border-none active:ring-[3px] active:ring-neutral-95;
+  }
+  .btn-outlined-neutral span.btn-startIcon > svg,
+  .btn-outlined-neutral span.btn-endIcon > svg {
+    @apply fill-neutral-main;
+  }
+  .btn-outlined-neutral:hover span.btn-startIcon > svg,
+  .btn-outlined-neutral:hover span.btn-endIcon > svg {
+    @apply fill-neutral-30;
+  }
+
+  /*  TEXT  */
+  .btn-text-primary {
+    @apply border border-transparent text-primary-main hover:border hover:border-primary-95 hover:bg-primary-onMain hover:text-primary-30 active:ring-[3px] active:ring-primary-95;
+  }
+  .btn-text-primary span.btn-startIcon > svg,
+  .btn-text-primary span.btn-endIcon > svg {
+    @apply fill-primary-main;
+  }
+  .btn-text-primary:hover span.btn-startIcon > svg,
+  .btn-text-primary:hover span.btn-endIcon > svg {
+    @apply fill-primary-30;
+  }
+  .btn-text-secondary {
+    @apply border border-transparent text-secondary-main hover:border hover:border-secondary-95 hover:bg-secondary-onMain hover:text-secondary-30 active:ring-[3px] active:ring-secondary-95;
+  }
+  .btn-text-secondary span.btn-startIcon > svg,
+  .btn-text-secondary span.btn-endIcon > svg {
+    @apply fill-secondary-main;
+  }
+  .btn-text-secondary:hover span.btn-startIcon > svg,
+  .btn-text-secondary:hover span.btn-endIcon > svg {
+    @apply fill-secondary-30;
+  }
+
+  .btn-text-success {
+    @apply border border-transparent text-success-main hover:border hover:border-success-95 hover:bg-success-onMain hover:text-success-30 active:ring-[3px] active:ring-success-95;
+  }
+  .btn-text-success span.btn-startIcon > svg,
+  .btn-text-success span.btn-endIcon > svg {
+    @apply fill-success-main;
+  }
+  .btn-text-success:hover span.btn-startIcon > svg,
+  .btn-text-success:hover span.btn-endIcon > svg {
+    @apply fill-success-30;
+  }
+  .btn-text-error {
+    @apply border border-transparent text-error-main hover:border hover:border-error-95 hover:bg-error-onMain hover:text-error-30 active:ring-[3px] active:ring-error-95;
+  }
+  .btn-text-error span.btn-startIcon > svg,
+  .btn-text-error span.btn-endIcon > svg {
+    @apply fill-error-main;
+  }
+  .btn-text-error:hover span.btn-startIcon > svg,
+  .btn-text-error:hover span.btn-endIcon > svg {
+    @apply fill-error-30;
+  }
+  .btn-text-info {
+    @apply border border-transparent text-info-main hover:border hover:border-info-95 hover:bg-info-onMain hover:text-info-30 active:ring-[3px] active:ring-info-95;
+  }
+  .btn-text-info span.btn-startIcon > svg,
+  .btn-text-info span.btn-endIcon > svg {
+    @apply fill-info-main;
+  }
+  .btn-text-info:hover span.btn-startIcon > svg,
+  .btn-text-info:hover span.btn-endIcon > svg {
+    @apply fill-info-30;
+  }
+  .btn-text-warning {
+    @apply border border-transparent text-warning-main hover:border hover:border-warning-95 hover:bg-warning-onMain hover:text-warning-30 active:ring-[3px] active:ring-warning-95;
+  }
+  .btn-text-warning span.btn-startIcon > svg,
+  .btn-text-warning span.btn-endIcon > svg {
+    @apply fill-warning-main;
+  }
+  .btn-text-warning:hover span.btn-startIcon > svg,
+  .btn-text-warning:hover span.btn-endIcon > svg {
+    @apply fill-warning-30;
+  }
+  .btn-text-neutral {
+    @apply border border-transparent text-neutral-main hover:border hover:border-neutral-95 hover:bg-neutral-onMain hover:text-neutral-30 active:ring-[3px] active:ring-neutral-95;
+  }
+  .btn-text-neutral span.btn-startIcon > svg,
+  .btn-text-neutral span.btn-endIcon > svg {
+    @apply fill-neutral-main;
+  }
+  .btn-text-neutral:hover span.btn-startIcon > svg,
+  .btn-text-neutral:hover span.btn-endIcon > svg {
+    @apply fill-neutral-30;
+  }
+
+  /*  HALOGEN  */
+  .btn-halogen-primary {
+    @apply border border-neutral-98 bg-surface-6 text-primary-main hover:border hover:border-primary-onContainer active:border-none active:ring-[3px] active:ring-primary-95;
+  }
+  .btn-halogen-primary span.btn-startIcon > svg,
+  .btn-halogen-primary span.btn-endIcon > svg {
+    @apply fill-primary-main;
+  }
+  .btn-halogen-secondary {
+    @apply border border-neutral-98 bg-surface-6 text-secondary-main hover:border hover:border-secondary-onContainer active:border-none active:ring-[3px] active:ring-secondary-95;
+  }
+  .btn-halogen-secondary span.btn-startIcon > svg,
+  .btn-halogen-secondary span.btn-endIcon > svg {
+    @apply fill-secondary-main;
+  }
+  .btn-halogen-success {
+    @apply border border-neutral-98 bg-surface-6 text-success-main hover:border hover:border-success-onContainer active:border-none active:ring-[3px] active:ring-success-95;
+  }
+  .btn-halogen-success span.btn-startIcon > svg,
+  .btn-halogen-success span.btn-endIcon > svg {
+    @apply fill-success-main;
+  }
+  .btn-halogen-error {
+    @apply border border-neutral-98 bg-surface-6 text-error-main hover:border hover:border-error-onContainer active:border-none active:ring-[3px] active:ring-error-95;
+  }
+  .btn-halogen-error span.btn-startIcon > svg,
+  .btn-halogen-error span.btn-endIcon > svg {
+    @apply fill-error-main;
+  }
+  .btn-halogen-info {
+    @apply border border-neutral-98 bg-surface-6 text-info-main hover:border hover:border-info-onContainer active:border-none active:ring-[3px] active:ring-info-95;
+  }
+  .btn-halogen-info span.btn-startIcon > svg,
+  .btn-halogen-info span.btn-endIcon > svg {
+    @apply fill-info-main;
+  }
+  .btn-halogen-warning {
+    @apply border border-neutral-98 bg-surface-6 text-warning-main hover:border hover:border-warning-onContainer active:border-none active:ring-[3px] active:ring-warning-95;
+  }
+  .btn-halogen-warning span.btn-startIcon > svg,
+  .btn-halogen-warning span.btn-endIcon > svg {
+    @apply fill-warning-main;
+  }
+  .btn-halogen-neutral {
+    @apply border border-neutral-98 bg-surface-6 text-neutral-main hover:border hover:border-neutral-onContainer active:border-none active:ring-[3px] active:ring-neutral-95;
+  }
+  .btn-halogen-neutral span.btn-startIcon > svg,
+  .btn-halogen-neutral span.btn-endIcon > svg {
+    @apply fill-neutral-main;
+  }
+
+  /*  DISABLED  */
+  .btn-disabled {
+    @apply bg-neutral-container text-ink-bh;
+  }
+  .btn-disabled span.btn-startIcon > svg,
+  .btn-disabled span.btn-endIcon > svg {
+    @apply fill-ink-bh;
+  }
+}

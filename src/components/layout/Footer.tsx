@@ -2,7 +2,13 @@
 
 import React, { memo, useMemo } from "react";
 import { useTranslations } from "next-intl";
-import { HorizontalLogo, Typography } from "@repo/ui";
+import HorizontalLogo from "@components/ui/forms/HorizontalLogo.tsx";
+import Typography from "@components/ui/forms/Typography.tsx";
+import NextLink from "@components/ui/gadgets/NextLink.tsx";
+import PSm from "@components/ui/smallCards/permissions/PSm.tsx";
+import SSm from "@components/ui/smallCards/permissions/SSm.tsx";
+import TSm from "@components/ui/smallCards/permissions/TSm.tsx";
+import SocialSm from "@components/ui/smallCards/SocialSm.tsx";
 import {
   PAGE_ROUTE_ABOUT_US,
   PAGE_ROUTE_CONTACT_US,
@@ -10,11 +16,6 @@ import {
   PAGE_ROUTE_HOME,
   PAGE_ROUTE_SHOPS,
 } from "@constants/env.ts";
-import NextLink from "@components/ui/gadgets/NextLink.tsx";
-import PSm from "@components/ui/smallCards/permissions/PSm.tsx";
-import SSm from "@components/ui/smallCards/permissions/SSm.tsx";
-import TSm from "@components/ui/smallCards/permissions/TSm.tsx";
-import SocialSm from "@components/ui/smallCards/SocialSm.tsx";
 
 function Footer() {
   const t = useTranslations("webSiteConstant");

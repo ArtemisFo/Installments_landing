@@ -1,5 +1,5 @@
-import { PlusIcon } from "@repo/icon";
-import { Typography } from "@repo/ui";
+import PlusIcon from "@components/ui/icons/PlusIcon.tsx";
+import Typography from "@components/ui/forms/Typography.tsx";
 
 interface Props {
   count?: number | string;

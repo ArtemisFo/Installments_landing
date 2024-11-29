@@ -3,10 +3,11 @@
 import React from "react";
 import TitleCard from "@components/ui/cards/TitleCard.tsx";
 import { useTranslations } from "next-intl";
-import { Button, Typography } from "@repo/ui";
+import Button from "@components/ui/forms/Button.tsx";
+import Typography from "@components/ui/forms/Typography.tsx";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import { HEXAGON_LOGO_NEXT_IMAGE } from "@constants/env.ts";
-import { ArrowLeftIcon } from "@repo/icon";
+import ArrowLeftIcon from "@components/ui/icons/ArrowLeftIcon.tsx";
 
 function PreviewAboutUsSubset() {
   const t = useTranslations("webSiteConstant");

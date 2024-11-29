@@ -1,4 +1,4 @@
-import { Typography } from "@repo/ui";
+import Typography from "@components/ui/forms/Typography.tsx";
 
 interface Props {
   txt?: string;

@@ -1,0 +1,78 @@
+/* ALERT */
+.alert-box {
+  .alert-progress-bar {
+    transition: width 0.5s ease-out;
+    animation-name: progressBarFill;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    &.anime-du-4 {
+      animation-duration: 4s;
+    }
+    &.anime-du-8 {
+      animation-duration: 8s;
+    }
+  }
+  &:has(:is(.alert-progress-bar)) {
+    animation-name: progressBarKiller;
+    animation-fill-mode: both;
+    &:has(:is(.anime-du-4)) {
+      animation-duration: 4s;
+    }
+    &:has(:is(.anime-du-8)) {
+      animation-duration: 8s;
+    }
+  }
+}
+.alert-anim-stop {
+  .alert-progress-bar {
+    animation-play-state: paused;
+  }
+  &:has(:is(.alert-progress-bar)) {
+    animation-play-state: paused;
+  }
+}
+.text-skeleton::before {
+  content: "\00a0";
+}
+@keyframes progressBarFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes progressBarKiller {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+.s-svg-base {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+.s-2 {
+  font-size: 8px;
+}
+.s-3 {
+  font-size: 12px;
+}
+.s-4 {
+  font-size: 16px;
+}
+.s-5 {
+  font-size: 20px;
+}
+.s-8 {
+  font-size: 24px;
+}
+.s-10 {
+  font-size: 32px;
+}
+.s-12 {
+  font-size: 40px;
+}

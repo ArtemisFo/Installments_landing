@@ -2,8 +2,10 @@
 
 import React, { memo, useMemo } from "react";
 import { useTranslations } from "next-intl";
-import { Button, HorizontalLogo, Typography } from "@repo/ui";
-import { UserIcon } from "@repo/icon";
+import HorizontalLogo from "@components/ui/forms/HorizontalLogo.tsx";
+import Button from "@components/ui/forms/Button.tsx";
+import Typography from "@components/ui/forms/Typography.tsx";
+import UserIcon from "@components/ui/icons/UserIcon.tsx";
 import { usePathname } from "next/navigation";
 import NextLink from "@components/ui/gadgets/NextLink.tsx";
 import {

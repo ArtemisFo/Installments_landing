@@ -1,0 +1,152 @@
+@layer components {
+  /* TYPOGRAPHY */
+  .typography-h1 {
+    @apply text-2xl leading-6;
+  }
+  .typography-h2 {
+    @apply text-xl leading-11;
+  }
+  .typography-h3 {
+    @apply text-lg leading-12;
+  }
+  .typography-h4 {
+    @apply text-base leading-4;
+  }
+  .typography-h5 {
+    @apply text-sm leading-14;
+  }
+  .typography-h6 {
+    @apply text-xs leading-4;
+  }
+  .typography-t1 {
+    @apply text-3xl leading-15;
+  }
+  .typography-t2 {
+    @apply text-2xl leading-6;
+  }
+  .typography-st1 {
+    @apply text-xl leading-11;
+  }
+  .typography-st2 {
+    @apply text-lg leading-12;
+  }
+  .typography-b1 {
+    @apply text-xl leading-11;
+  }
+  .typography-b2 {
+    @apply text-lg leading-12;
+  }
+  .typography-c1 {
+    @apply text-base leading-4;
+  }
+  .typography-c2 {
+    @apply text-sm leading-14;
+  }
+  .typography-c3 {
+    @apply text-xs leading-4;
+  }
+
+  /* BUTTON */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl;
+  }
+  .btn-medium {
+    @apply px-2;
+  }
+
+  .btn > span.btn-startIcon,
+  .btn > span.btn-endIcon {
+    @apply block;
+  }
+  .btn > span.btn-startIcon {
+    @apply me-2;
+  }
+  .btn > span.btn-endIcon {
+    @apply ms-2;
+  }
+  .btn-large-xs > span.btn-endIcon > svg,
+  .btn-large-sm > span.btn-endIcon > svg,
+  .btn-large-xs > span.btn-startIcon > svg,
+  .btn-large-sm > span.btn-startIcon > svg {
+    @apply w-4;
+  }
+  .btn-large-md > span.btn-endIcon > svg,
+  .btn-large-lg > span.btn-endIcon > svg,
+  .btn-large-xl > span.btn-endIcon > svg,
+  .btn-large-md > span.btn-startIcon > svg,
+  .btn-large-lg > span.btn-startIcon > svg,
+  .btn-large-xl > span.btn-startIcon > svg {
+    @apply w-5;
+  }
+
+  .btn-large {
+    @apply px-2;
+  }
+  .btn-large:has(span) {
+    @apply justify-between;
+  }
+  .btn-large-xs {
+    @apply min-w-[8.938rem];
+  }
+  .btn-large-sm {
+    @apply min-w-[9.313rem];
+  }
+  .btn-large-md {
+    @apply min-w-[9.938rem];
+  }
+  .btn-large-lg {
+    @apply min-w-[10.375rem];
+  }
+  .btn-large-xl {
+    @apply min-w-[10.375rem];
+  }
+
+  /* INPUT */
+  .text-field-base {
+    @apply flex w-full flex-col;
+    &:has(span.text-sm.leading-14) .input-box {
+      @apply mb-2;
+    }
+  }
+  .input-box {
+    &:has(span.input-startIcon) > input.input-base {
+      @apply pr-7;
+    }
+    &:has(span.input-endIcon) > input.input-base {
+      @apply pl-7;
+    }
+    &:has(input:disabled) svg {
+      @apply fill-neutral-80;
+    }
+  }
+  .input-base {
+    @apply block w-full rounded-lg border border-neutral-95 bg-neutral-101 outline-none transition ease-linear;
+    &:focus-visible {
+      @apply border-primary-main bg-ink-ws caret-primary-main;
+    }
+    &:hover:not(:disabled) {
+      @apply bg-ink-ws;
+    }
+    &:disabled {
+      @apply bg-neutral-99;
+    }
+  }
+
+  /* SPINNER */
+  .circular-loading {
+    @apply inline-block relative;
+    & span {
+      @apply block absolute w-full h-full border-4 border-t-current border-b-transparent border-x-transparent rounded-full;
+    }
+    & span:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    & span:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    & span:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+
+  }
+}

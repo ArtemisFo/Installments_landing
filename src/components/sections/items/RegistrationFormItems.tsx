@@ -2,10 +2,12 @@
 
 import React, { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Button, MinimalTabs, TextField } from "@repo/ui";
+import MinimalTabs from "@components/ui/forms/MinimalTabs.tsx";
+import Button from "@components/ui/forms/Button.tsx";
+import TextField from "@components/ui/forms/TextField.tsx";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import * as Yup from "yup";
-import { ArrowLeftIcon } from "@repo/icon";
+import ArrowLeftIcon from "@components/ui/icons/ArrowLeftIcon.tsx";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import {

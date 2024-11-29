@@ -3,8 +3,9 @@
 import React from "react";
 import TitleCard from "@components/ui/cards/TitleCard.tsx";
 import { useTranslations } from "next-intl";
-import { Button } from "@repo/ui";
-import { ArrowLeftIcon } from "@repo/icon";
+import Button from "@components/ui/forms/Button.tsx";
+import ArrowLeftIcon from "@components/ui/icons/ArrowLeftIcon.tsx";
+// @ts-ignore
 import { SwiperSlide } from "swiper/react";
 import SecondarySlideCard from "@components/ui/cards/SecondarySlideCard.tsx";
 import { THIRD_SAMPLE_NEXT_IMAGE } from "@constants/env.ts";

@@ -1,8 +1,9 @@
-import { Typography } from "@repo/ui";
+import Typography from "@components/ui/forms/Typography.tsx";
 import NextImage from "@components/ui/gadgets/NextImage.tsx";
 import React from "react";
-import { ContextDisplay_Utils } from "@repo/utils";
-import { LocationIcon, CategoryIcon } from "@repo/icon";
+import { ContextDisplay_Utils } from "@utils/functions.ts";
+import LocationIcon from "@components/ui/icons/LocationIcon.tsx";
+import CategoryIcon from "@components/ui/icons/CategoryIcon.tsx";
 import { useTranslations } from "next-intl";
 import { THIRD_SAMPLE_NEXT_IMAGE } from "@constants/env.ts";
 import { StoresResObjAPIType } from "@interfaces/response.ts";
