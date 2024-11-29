@@ -1,0 +1,68 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --header-height: 69px;
+  }
+}
+
+@layer utilities {
+  .ltr {
+    direction: ltr;
+  }
+  .rtl {
+    direction: rtl;
+  }
+  .header-rounded {
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  .font-settings-ss04 {
+    -moz-font-feature-settings: "ss04";
+    -webkit-font-feature-settings: "ss04";
+    font-feature-settings: "ss04";
+  }
+  .header-line {
+    @apply after:-z-[1] after:absolute after:translate-x-1/2 after:-bottom-1 after:right-1/2 after:w-[99.7%] after:h-full after:bg-primary-main after:header-rounded;
+  }
+  .footer-rounded {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+  }
+  .footer-line {
+    @apply after:-z-[1] after:absolute after:translate-x-1/2 after:-top-0.5 after:right-1/2 after:w-[99.7%] after:h-full after:bg-primary-main after:footer-rounded;
+  }
+  .card-line {
+    @apply after:-z-[1] after:absolute after:translate-x-1/2 after:-top-0.5 after:right-1/2 after:w-[99.7%] after:h-full after:bg-primary-main after:rounded-2xl;
+  }
+  .secondary-card {
+    @apply rounded-2xl transition-all ease-linear hover:shadow-lg flex flex-col items-center w-fit px-4 py-5 my-4 bg-surface-6 cursor-pointer relative hover:card-line;
+  }
+  .activeNavLink:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #2847f2;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .activeNavLink p {
+    @apply text-primary-main font-bold;
+  }
+}
+
+.hex {
+  height: 16px;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+  background: linear-gradient(#001aac, #516bff);
+}
+
+.values-card-line {
+  @apply after:-z-[1] after:absolute after:translate-x-1/2 after:-top-0.5 after:right-1/2 after:w-[99.7%] after:h-full after:bg-primary-main after:rounded-3xl;
+}

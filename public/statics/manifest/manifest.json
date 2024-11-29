@@ -1,0 +1,66 @@
+{
+  "theme_color": "#fffffe",
+  "background_color": "#a4f4fd",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "id": "/",
+  "name": "Homeca Workman App",
+  "short_name": "Homeca",
+  "orientation": "portrait",
+  "description": "Homeca Workman App",
+  "icons": [
+    {
+      "src": "/statics/manifest/icons/icon-24x24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "/statics/manifest/icons/icon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/statics/manifest/icons/icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/statics/manifest/icons/icon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/statics/manifest/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "HomecaApp",
+      "short_name": "Homeca",
+      "description": "Homeca Workman App",
+      "url": "/",
+      "icons": [
+        { "src": "/statics/manifest/icons/icon-96x96.png", "sizes": "96x96" }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/statics/manifest/icons/icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/statics/manifest/icons/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+"use client";
+
+import React from "react";
+import TitleCard from "@components/ui/cards/TitleCard.tsx";
+import { useTranslations } from "next-intl";
+import { Button } from "@repo/ui";
+import { ArrowLeftIcon } from "@repo/icon";
+import { SwiperSlide } from "swiper/react";
+import SecondarySlideCard from "@components/ui/cards/SecondarySlideCard.tsx";
+import { THIRD_SAMPLE_NEXT_IMAGE } from "@constants/env.ts";
+import SwiperProvider from "@components/providers/SwiperProvider.tsx";
+
+function ShopsSlideSubset() {
+  const t = useTranslations("webSiteConstant");
+
+  return (
+    <section>
+      <div className="my-2">
+        <TitleCard
+          ti={t("texts.contractingShops")}
+          action={
+            <Button variant="halogen" size="sm" endIcon={<ArrowLeftIcon />}>
+              {t("buttons.viewAll")}
+            </Button>
+          }
+        />
+      </div>
+      <div className="pb-4">
+        <SwiperProvider>
+          {Array(20)
+            .fill(true)
+            .map((val, index) => (
+              <SwiperSlide key={index}>
+                <SecondarySlideCard
+                  data={{
+                    img: THIRD_SAMPLE_NEXT_IMAGE,
+                    txt: "سازمان تامین اجتماعی",
+                  }}
+                />
+              </SwiperSlide>
+            ))}
+        </SwiperProvider>
+      </div>
+    </section>
+  );
+}
+
+export default ShopsSlideSubset;
